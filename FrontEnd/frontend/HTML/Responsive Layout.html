@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        
+        .main-container {
+            display: flex;
+            flex: 1;
+        }
+
+       
+        .sidebar {
+            background-color: #f4f4f4;
+            width: 250px;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column; 
+            }
+
+            .sidebar {
+                width: 100%; 
+                border-right: none; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive Layout</h1>
+    </header>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <p>This is the sidebar content.</p>
+        </div>
+
+        <div class="content">
+            <h2>Main Content</h2>
+            <p>This is the main content area.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Saipadmapavan</p>
+    </footer>
+</body>
+</html>

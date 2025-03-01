@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+        }
+
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        
+        main {
+            display: flex;
+            flex: 1; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            padding: 20px;
+        }
+
+        
+        .left, .center, .right {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(175, 178, 185, 0.1);
+            flex: 1;/
+        }
+
+        
+        .center {
+            flex: 2; 
+        }
+
+        
+        footer {
+            background-color: #5947be;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+       
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column; 
+                align-items: center; 
+            }
+
+            .left, .center, .right {
+                flex: none; 
+                width: 100%; 
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Responsive Flexbox Layout</h1>
+    </header>
+
+    <main>
+        <div class="left">
+            <h2>Left Column</h2>
+            <p>This is the left column. </p>
+        </div>
+        <div class="center">
+            <h2>Center Column</h2>
+            <p>This is the center column. </p>
+        </div>
+        <div class="right">
+            <h2>Right Column</h2>
+            <p>This is the right column. </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 saipadmapavan</p>
+    </footer>
+
+</body>
+</html>

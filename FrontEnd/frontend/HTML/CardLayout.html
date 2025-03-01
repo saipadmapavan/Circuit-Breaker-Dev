@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 100vh;
+        }
+
+        
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            
+            gap: 20px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
+           
+        }
+        .im1 {
+            height: 50%;
+            width: 10%;
+            margin: 2px;
+            padding: 2px;
+            border-radius: 30px;
+        }
+
+        
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            
+        }
+
+        
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            
+        }
+
+        
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        
+        .card:hover {
+            transform: translateY(-10px);
+            
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        
+        <div class="card">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/022/823/608/small/shopping-cart-online-shopping-concept-animated-icon-video.jpg" alt="Card Image 1" class="im1">
+            <div class="card-content">
+                <h3>Shopping</h3>
+                <p>Shopping in youtube</p>
+            </div>
+        </div>
+
+       
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1710/1710130.png" alt="Card Image 2" class="im1">
+            <div class="card-content">
+                <h3>Trending</h3>
+                <p>Trending in Youtube</p>
+            </div>
+        </div>
+
+        
+        <div class="card">
+            <img src="https://yt3.googleusercontent.com/iejt3HougR_H3aylfVLFrQCf5UecPyZV0GjCDAlfFs171-Rdl6IULR-cnFr-x8k1cWN9JGiE=s160-c-k-c0x00ffffff-no-rj" alt="Card Image 3">
+            <div class="card-content">
+                <h3>D7 Production</h3>
+                <p>This is a D7 production Youtube Channel</p>
+            </div>
+        </div>
+
+        
+        <div class="card">
+            <img src="https://yt3.googleusercontent.com/_HVEhzMN3t-FrKAhJBnrsZA86U02gFRNWmmyUGm6Y8AQb4QkKZhe8veGO_gtAf1vSoB7r-PU=s160-c-k-c0x00ffffff-no-rj" alt="Card Image 4">
+            <div class="card-content">
+                <h3>Jsp Production</h3>
+                <p>This is a Youtube Channel</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

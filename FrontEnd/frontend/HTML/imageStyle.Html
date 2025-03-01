@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Styling</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f9; 
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        img {
+            width: 300px; 
+            height: auto; 
+            border: 5px solid #333; 
+            border-radius: 15px; 
+            box-shadow: 0 4px 8px rgb(66, 59, 59); 
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05); 
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <h1>Styled Image</h1>
+        
+        <img src="https://www.netapp.com/partners/partner-connect/wipro-ltd/" alt="Error">
+    </div>
+</body>
+</html>

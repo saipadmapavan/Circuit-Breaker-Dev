@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: grid;
+            grid-template-rows: auto 1fr auto; 
+            min-height: 100vh; 
+        }
+
+        
+        header {
+            background-color: #443b3b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            gap: 20px; 
+            padding: 20px;
+        }
+
+        .left, .right {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(223, 40, 40, 0.1);
+        }
+
+        
+        footer {
+            background-color: #312fa1;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CSS Grid Layout</h1>
+    </header>
+
+    <main>
+        <div class="left">
+            <h2>Left Column</h2>
+            <p>This is the left column..</p>
+        </div>
+        <div class="right">
+            <h2>Right Column</h2>
+            <p>This is the right column..</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 saipadmapavan</p>
+    </footer>
+
+</body>
+</html>
